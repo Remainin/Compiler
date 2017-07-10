@@ -1,0 +1,81 @@
+S -> part parts
+parts -> part parts
+parts -> $
+part -> type ID ( paras ) part_body
+type -> int
+type -> char
+type -> float
+type -> string
+type -> void
+paras -> type ID paras
+paras -> $
+part_body -> ;
+part_body -> block
+block -> { def_statements statements }
+def_statements -> type ID def_statement def_statements
+def_statements -> $
+def_statement -> init ;
+def_statement -> [ INT_VALUE ] init_array ;
+init -> = expression
+init -> $
+init_array -> = { const consts }
+init_array -> $
+statements -> statement statements
+statements -> $
+statement -> expression_statement ;
+statement -> jump_statement
+statement -> loop_statement
+statement -> condition_statement
+statement -> io_statement
+expression_statement -> expression
+io_statement -> in ( ID ) ;
+io_statement -> out ( io_out ) ;
+io_out -> ID
+io_out -> STRING_VALUE
+jump_statement -> back back_parain ;
+loop_statement -> loop ( logical_expression ) block_statement
+loop_statement -> for ( back_parain ; back_parain ; back_parain ) block_statement
+condition_statement -> if ( logical_expression ) block_statement result
+result -> else block_statement
+result -> $
+logical_expression -> expression logical_second
+logical_second -> lop expression logical_second
+logical_second -> $
+lop -> &
+lop -> !
+lop -> |
+block_statement -> { statements }
+back_parain -> expression
+back_parain -> $
+expression -> value operation
+operation -> op value
+operation -> $
+op -> >
+op -> >=
+op -> <
+op -> <=
+op -> ==
+op -> !=
+op -> =
+value -> item value'
+value' -> + item value'
+value' -> - item value'
+value' -> $
+item -> factor item'
+item' -> * factor item'
+item' -> / factor item'
+item' -> $
+factor -> ( value )
+factor -> ID call_part
+factor -> const
+call_part -> [ INT_VALUE ]
+call_part -> ( para_in )
+call_part -> $
+para_in -> expression para_in
+para_in -> $
+consts -> const consts
+consts -> $
+const -> INT_VALUE
+const -> CHAR_VALUE
+const -> STRING_VALUE
+const -> FLOAT_VALUE
