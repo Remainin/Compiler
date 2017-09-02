@@ -6,11 +6,12 @@
 注：友情附赠报告一份，学习学妹们可以适当参考，觉得有帮助的Star一下，如果有疑问或代码不好用欢迎随时骚扰我：zhangmingshuai3@qq.com
 
 <br>
-我的GUI整体界面显示如下：<br>
-![]()
+我的GUI语法词法阶段整体界面显示如下：<br>
+![](https://github.com/Remainin/Compiler/blob/master/by1.png)
 
-<br>
-该小型编译器的具体使用方法，请参考我的报告“1140310606-张茗帅.pdf”
+<br>我的GUI语义阶段整体界面显示如下：<br>
+
+![](https://github.com/Remainin/Compiler/blob/master/by2.png)<br>该小型编译器的具体使用方法，请参考我的报告“1140310606-张茗帅.pdf”
 	
 ### 实验要求：<br>
 
