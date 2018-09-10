@@ -6,8 +6,7 @@
 注：友情附赠报告一份，学习学妹们可以适当参考，觉得有帮助的Star一下，如果有疑问或代码不好用欢迎随时骚扰我：zhangmingshuai3@qq.com
 
 <br>
-我的GUI语法词法阶段整体界面显示如下：<br>
-![](https://github.com/Remainin/Compiler/blob/master/by1.png)
+我的GUI语法词法阶段整体界面显示如下：<br>![](https://github.com/Remainin/Compiler/blob/master/by1.png) 
 
 <br>我的GUI语义阶段整体界面显示如下：<br>
 
